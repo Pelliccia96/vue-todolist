@@ -22,5 +22,8 @@ createApp({
         deleteTask(index) {
             this.taskList.splice(index, 1);
         },
+        clearAll() {
+            this.taskList = [];
+        },
     },
 }).mount("#app");
